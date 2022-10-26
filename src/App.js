@@ -1,13 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import Greet from './components/function_method'
-import NewGreet from './components/Class_method'
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Header from "./containers/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <Greet />
-      <NewGreet />
+      <Navbar />
+      <Header />
     </div>
   );
 }
