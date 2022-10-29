@@ -13,7 +13,8 @@ const Header = () => {
           In cryptography, a cipher is an algorithm for performing encryption or
           decryption—a series of well-defined steps that can be followed as a
           procedure. An alternative, less common term is encipherment. To
-          encipher or encode is to convert information into cipher or code
+          encipher or encode is to convert information into cipher or code. Here 
+          Comes Jimmy explaining these topics.
         </p>
         <div className="header__input">
           <input type="email" name="" id="" placeholder="Your Email Address" />
