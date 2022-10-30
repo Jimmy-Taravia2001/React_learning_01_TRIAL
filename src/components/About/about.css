@@ -1,0 +1,224 @@
+.aboutpage-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: #000;
+    color: var(--white-color);
+  }
+  .aboutpage-con-wrapper {
+    width: 50%;
+  }
+  .aboutpage-gif {
+    width: 50%;
+  }
+  
+  .aboutpage-con-wrapper .landing-hr {
+    border-width: 2px;
+    width: 25%;
+    color: var(--white-color);
+    margin: 2rem 0rem;
+    outline: none;
+  }
+  
+  .vision-con {
+    background: var(--slate-color);
+    color: var(--white-color);
+    line-height: 1.5;
+    padding: 4rem;
+    padding-bottom: 1rem;
+  }
+  
+  .vision {
+    display: flex;
+    padding: 2rem auto;
+  }
+  
+  .vision div {
+    flex: 50%;
+  }
+  
+  .vision div hr {
+    width: 15%;
+    border-width: 3px;
+    color: var(--white-color);
+    margin: 0.5rem 0rem;
+  }
+  
+  .horizontal-slider {
+    margin: 5rem 6rem;
+    margin-right: 0rem;
+  }
+  
+  .add-margin {
+    margin: 4rem 0rem !important;
+  }
+  .horizontal-slider .slick-list {
+    margin: 0 -5px;
+  }
+  .horizontal-slider .slick-slide > div {
+    padding: 0 5px;
+  }
+  
+  .horizontal-slider .slick-slide img {
+    width: 85% !important;
+    border-radius: 15px;
+  }
+  .horizontal-slider .slick-slider {
+    margin-bottom: 1rem;
+  }
+  .horizontal-slider {
+    margin-bottom: 0rem;
+  }
+  
+  .event-glance {
+    background: var(--black-color);
+    color: var(--white-color);
+    margin: 0;
+    padding: 4rem;
+    line-height: 1.5;
+  }
+  .glance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .glance div {
+    flex: 50%;
+    /* margin: 0rem 1rem; */
+  }
+  .glance-info hr {
+    margin: 2rem 0rem;
+    width: 25%;
+  }
+  .glance-event-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card {
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 1rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    margin: 4rem 2rem !important;
+  }
+  .card:hover {
+    transform: translateY(10px);
+  }
+  .card:hover:before {
+    opacity: 1;
+  }
+  .card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+    text-align: center;
+  }
+  .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+  }
+  .card .info {
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+    text-align: center;
+  }
+  .card .info h1 {
+    margin: 0px;
+  }
+  .card .info p {
+    margin-top: 8px;
+  }
+  .horizontal-slider .slick-slide img {
+    /* width: 100% !important; */
+    height: 350px !important;
+  }
+  .slick-slide img {
+    min-height: 0 !important;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .horizontal-slider {
+      margin: 0rem;
+    }
+  }
+  
+  @media screen and (max-width: 950px) {
+    .horizontal-slider .slick-slide img {
+      width: 100% !important;
+    }
+    .horizontal-slider {
+      margin: 4rem auto;
+      margin-bottom: 0rem;
+    }
+    .glance {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .vision-con {
+      padding: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .vision {
+      flex-direction: column;
+    }
+    .vision div hr {
+      margin: 2rem 0rem;
+    }
+    .horizontal-slider .slick-slider {
+      margin: 0.2rem !important;
+    }
+    .glance-event-cards {
+      flex-direction: column;
+    }
+    .card {
+      margin: 2rem;
+    }
+    .col-2-cards .card {
+      margin: 0rem !important;
+    }
+    .aboutpage-con-wrapper {
+      width: 60%;
+    }
+    .horizontal-slider .slick-slide img {
+      height: 150px !important;
+      width: 100% !important;
+    }
+    .slick-slide img {
+      min-height: 0;
+    }
+  }
+  
