@@ -14,7 +14,7 @@ const Header = () => {
           decryption—a series of well-defined steps that can be followed as a
           procedure. An alternative, less common term is encipherment. To
           encipher or encode is to convert information into cipher or code. Here 
-          Comes Jimmy explaining these topics.
+          Comes Jimmy explaining these topics, Jay and Ketul worked on this project.
         </p>
         <div className="header__input">
           <input type="email" name="" id="" placeholder="Your Email Address" />
